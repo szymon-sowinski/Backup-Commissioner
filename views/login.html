@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backup Commander - Login</title>
+
+    <link rel="stylesheet" href="../assets/css/button.css">
+    <link rel="stylesheet" href="../assets/css/container.css">
+    <link rel="stylesheet" href="../assets/css/error.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/table.css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="icon" href="../assets/img/icon.png">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script defer src="../assets/js/login.js"></script>
+    <script defer src="../assets/js/error.js"></script>
+</head>
+
+<body id="loginpage">
+    <header class="app-header">
+        <img src="../assets/img/icon.png" alt="Backup Commander Logo" class="app-logo">
+        <p class="app-name">Backup Commander</p>
+    </header>
+    <div id="confirmContainer">
+        <h1 class="login_header">Zaloguj się</h1>
+        <form id="loginForm" method="POST">
+            <label for="loginInput">Login:</label>
+            <input type="text" id="loginInput" name="login" placeholder="Wprowadź swój login" required />
+
+            <label for="userPasswordInput">Hasło:</label>
+            <input type="password" id="userPasswordInput" name="password" placeholder="Wprowadź swoje hasło" required />
+
+            <input type="submit" value="Zaloguj">
+        </form>
+    </div>
+    <div id="errorContainer" class="error-container" style="display:none;">
+        <div id="errorMessage" class="error-message"></div>
+        <button id="closeError" class="close-btn">X</button>
+    </div>
+</body>
+
+</html>

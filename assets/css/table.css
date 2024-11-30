@@ -1,0 +1,24 @@
+#dtable {
+    margin-top: 30px;
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+#dtable td, #dtable th {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#dtable th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #f44336;
+}
